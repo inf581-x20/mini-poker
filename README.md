@@ -1,13 +1,13 @@
 # mini-poker
 
 ## Cards 
-It is where we define our environment cards and the function hands that deal the cards to both players.
+"Cards" is a class that defines the environment's deck of cards and implements the "hands" function, which is responsible for dealing cards to both players during the game. This class plays a critical role in simulating our game.
 
 ## Random-Mean Attacker
-Random-Mean Attacker is a player, an opponent, who takes bets in {1,...,5} when his hand is less than the mean and in {6,...,10} otherwise.
+A "Random-Mean Attacker" is a type of opponent player in poker who determines their bets based on a certain condition. Specifically, if the value of their hand is less than the mean of all possible hand values, they will place bets randomly between 1 and 5. However, if the value of their hand is greater than or equal to the mean of all possible hand values, they will place bets randomly between 6 and 10.
 
 ## Deterministic Attacker
-Deterministic Attacker is a player who takes bets as a translation of the value of his hand.
+A "Deterministic Attacker" is a type of player in poker who determines their bets based on the value of their hand. In other words, their betting behavior is deterministic and can be predicted based on the strength of their hand.
 
 ## Human 
 Human is a class where we define the human interaction with the computer, the agent.
@@ -19,4 +19,4 @@ ThompsonSamplin, UCB1 and Exp3 represent the Multi-Arm bandit algorithms covered
 tdLearning represent the Q-learning algorithm covered in the course. 
 
 ## play function
-play is the main function to run a mini-poker game between an attacker and an agent. It takes agent, attacker, display and human respectively as parameters. The display parameter is to print or not the final worth of the agent and the attacker, in the other hand the human parameter is to print the state of advancement of the game while playing against a human player.
+The "play" function is the primary function used to run a mini-poker game between an attacker and an agent. The function takes four parameters: "agent," "attacker," "display," and "human." The "display" parameter determines whether or not the final worth of the agent and attacker is printed. The "human" parameter is used to display the progress of the game when playing against a human player.
